@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <nav>
             <div class="logo"><a href="index.html">Digital <span>Shop</span> </a></div>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
@@ -29,13 +30,13 @@
             </label>
         </nav>
     </div>
-
-    <!-- <div class="container">
-        <div class="wrapper">
-            this is the center
-            <img src="bg_ (1).jpg" alt="bgImage">
-        </div>
-    </div> -->
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $('ul').toggleClass('show')
+            });
+        });
+    </script>
 </body>
 
 </html>
