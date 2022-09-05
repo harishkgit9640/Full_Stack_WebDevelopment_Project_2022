@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav>
+    <div class="navbar">
+        <div class="max_width">
             <div class="logo"><a href="index.html">Digital <span>Shop</span> </a></div>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
@@ -28,10 +28,56 @@
             <label id="icon">
                 <i class="fa-solid fa-bars"></i>
             </label>
-        </nav>
+        </div>
     </div>
+    <!-- hero section -->
+    <div class="hero_section">
+        <div class="max_width">
+
+        </div>
+    </div>
+
+    <!-- Home section -->
+    <section>
+
+        <div class="about" id="aobut">
+            <div class="title">
+                <h2>About Us</h2>
+                <p>this is All About my project</p>
+            </div>
+            <div class="main_box">
+                <div class="left">
+                    <img src="bg_ (3).jpg" alt="about_image">
+                </div>
+                <div class="right">
+                    <h2>Do you know About Us</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis provident voluptas aliquid,
+                        excepturi aut pariatur qui sint eum itaque iste cum dolorem nam voluptate fugit. Quaerat optio
+                        ea fuga numquam, inventore doloremque illum ullam tempora libero voluptatem quis hic quo
+                        pariatur quos, laboriosam et laudantium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde veritatis ex ipsa ea. Dolorum
+                        ea fuga numquam, inventore doloremque illum ullam tempora libero voluptatem quis hic quo
+                        pariatur quos, laboriosam et laudantium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde veritatis ex ipsa ea. Dolorum
+                        ipsa voluptas nesciunt iste incidunt natus aliquid, repudiandae labore sed laborum. Ab, magnam
+                        in! Odit.</p>
+                    <button>Read More...</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <script>
         $(document).ready(function () {
+            $(window).scroll(function () {
+                if (this.scrollY > 20) {
+                    $('.navbar').addClass('sticky');
+                } else {
+                    $('.navbar').removeClass('sticky');
+                }
+            });
+
             $('#icon').click(function () {
                 $('ul').toggleClass('show');
                 $('#icon i').toggleClass('active');
