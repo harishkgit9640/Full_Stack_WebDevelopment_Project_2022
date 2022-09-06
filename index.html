@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>HKSolution - The Digital World</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
 </head>
 
 <body>
@@ -47,7 +48,7 @@
             </div>
             <div class="main_box">
                 <div class="left">
-                    <img src="bg_ (3).jpg" alt="about_image">
+                    <img src="images/bg_ (3).jpg" alt="about_image">
                 </div>
                 <div class="right">
                     <h2>Do you know About Us</h2>
@@ -66,24 +67,17 @@
             </div>
         </div>
 
+
+        <!-- footer section -->
+
+        <footer>
+            <div class="back2Top">
+                Top
+            </div>
+        </footer>
     </section>
 
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if (this.scrollY > 20) {
-                    $('.navbar').addClass('sticky');
-                } else {
-                    $('.navbar').removeClass('sticky');
-                }
-            });
-
-            $('#icon').click(function () {
-                $('ul').toggleClass('show');
-                $('#icon i').toggleClass('active');
-            });
-        });
-    </script>
+    <script src="Js/script.js"></script>
 </body>
 
 </html>
