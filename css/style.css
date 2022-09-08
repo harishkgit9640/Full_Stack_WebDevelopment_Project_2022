@@ -108,6 +108,28 @@ ul {
     display: none;
 }
 
+/* Hero Section */
+
+.max_width .content {
+    margin: auto 0 auto 45px;
+}
+
+.max_width .content button {
+    padding: 10px 30px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.max_width .content button:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
 
 
 
