@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=q">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', Helvetica, sans-serif;
+        }
+
+        :root {
+            --white: #ffffff;
+            --darkGreen: #071E22;
+            --black: #000000;
+            --orange: #FC440F;
+        }
+
+        .title p {
+            margin: auto;
+            width: 60%;
+        }
+
+        .title h1 {
+            font-weight: 600;
+            font-size: 50px;
+        }
+
+        .title {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            padding-top: 60px;
+            text-align: center;
+            color: var(--white);
+            background-color: var(--darkGreen);
+        }
+
+        .main_box {
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -40%);
+        }
+
+        .main_box {
+            padding: 15px 30px;
+            width: 70%;
+            height: 450px;
+            margin: auto;
+            background-color: var(--white);
+            box-shadow: 0 0 9px var(--black);
+        }
+
+        form .form_item {
+            width: 100%;
+            height: 400px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        form .form_item input {
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit alias est praesentium officiis
+                modi, perspiciatis inventore aliquid! Voluptates iure hic quia accusamus. Quia error odit magnam eum
+                minus explicabo!</p>
+        </div>
+        <div class="main_box">
+            <form action="action">
+                <div class="form_item">
+                    <div class="name">
+                        <label for="name">First Name</label>
+                        <input type="text" name="name" id="name" placeholder="Harish">
+                    </div>
+                    <div class="name">
+                        <label for="name">Last Name</label>
+                        <input type="text" name="name" id="name" placeholder="Sahu">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
