@@ -33,8 +33,9 @@ a {
 }
 
 .hero_section {
-    height: 700px;
-    background-image: linear-gradient(rgba(2, 200, 255, 0.4), rgba(23, 31, 36, 0.8)), url('/images/bg_\ \(1\).jpg');
+    /* position: relative; */
+    height: 600px;
+    background-image: linear-gradient(rgba(2, 200, 255, 0.4), rgba(0, 0, 0, 0.8)), url('/images/bg_\ \(1\).jpg');
     clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
     background-repeat: no-repeat;
     background-position: center;
@@ -60,7 +61,7 @@ ul {
 }
 
 .navbar .logo a {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--white);
 }
@@ -111,22 +112,41 @@ ul {
 /* Hero Section */
 
 .max_width .content {
-    margin: auto 0 auto 45px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
 }
 
-.max_width .content button {
-    padding: 10px 30px;
-    background-color: transparent;
+.max_width .content h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.max_width .content span {
+    color: var(--darkGreen);
+    font-weight: 800;
+}
+
+.max_width .content p {
+    margin: 30px 0px;
+}
+
+.max_width .content a {
+    padding: 10px 40px;
     outline: none;
     border: 2px solid var(--orange);
-    color: var(--orange);
+    background-color: transparent;
+    color: var(--white);
     font-size: 18px;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: all 0.3s ease;
 }
 
-.max_width .content button:hover {
+.max_width .content a:hover {
     color: var(--white);
     background-color: var(--orange);
 }
@@ -178,6 +198,7 @@ ul {
 }
 
 .main_box .right h2 {
+    padding-bottom: 10px;
     font-size: 30px;
     font-weight: 600;
     color: var(--orange);
@@ -186,12 +207,12 @@ ul {
 }
 
 .main_box .right p {
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: justify;
     line-height: 2;
 }
 
-.main_box .right button {
+.main_box .right a {
     padding: 10px 30px;
     background-color: transparent;
     outline: none;
@@ -203,7 +224,7 @@ ul {
     transition: all 0.3s ease;
 }
 
-.main_box .right button:hover {
+.main_box .right a:hover {
     color: var(--white);
     background-color: var(--darkGreen);
     border: 2px solid var(--darkGreen);
