@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+:root {
+    --darkGreen: #071E22;
+    --orange: #FC440F;
+    --white: #ffffff;
+    --lightBlack: #878787;
+    --black: #000000;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --bg-1: linear-gradient(to top, #071E22 0%, #FC440F 100%);
+
+}
+
+/* ALL PAGES STYLING */
+a {
+    text-decoration: none;
+}
+
+.title p {
+    margin: 20px auto;
+    padding-bottom: 30px;
+    width: 60%;
+}
+
+.title h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding-top: 60px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--darkGreen);
+}
+
+.main_box {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -40%);
+}
+
+.form_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_box {
+    padding: 15px 30px;
+    width: 70%;
+    height: 65%;
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--white);
+    box-shadow: 0 0 9px var(--black);
+}
+
+form .form_item input,
+textarea {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 1px solid var(--darkGreen);
+    padding: 0px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+    padding-top: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.form_item a {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    border: 1px solid var(--darkGreen);
+    background-color: transparent;
+    color: var(--darkGreen);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.title a {
+    padding: 10px 60px;
+    border-radius: 50px;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.title a:hover {
+    color: var(--darkGreen);
+    background-color: var(--white);
+}
+
+.form_item a:hover {
+    color: var(--white);
+    background-color: var(--darkGreen);
+}
