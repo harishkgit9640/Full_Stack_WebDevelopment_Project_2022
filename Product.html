@@ -8,15 +8,28 @@
     <title>Product Page</title>
     <link rel="stylesheet" href="css/allstyle.css">
     <style>
-        .proBox {
+        .container {
             padding: 15px;
-            margin: 30px auto;
-            width: 350px;
-            height: 400px;
-            border-radius: 5px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            /* align-items: center; */
+            overflow: auto;
+            scroll-behavior: smooth;
+        }
+
+        .proBox {
+            margin-left: 10px;
             display: grid;
             place-items: center;
-            box-shadow: 1px 1px 10px #000;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .proBox:hover {
+            transform: translateY(-15px) scale(1.02);
         }
 
         .proBox img {
@@ -29,6 +42,16 @@
             font-size: 18px;
             font-weight: 500;
             color: #aaa;
+        }
+
+        .proBox p:nth-child(5) span:nth-child(2) {
+            color: red;
+        }
+
+        .proBox p:nth-child(5) span:first-child {
+            font-size: 24px;
+            color: green;
+            font-weight: 600;
         }
 
         .proBox p:nth-child(2) {
@@ -52,19 +75,30 @@
             color: #aaa;
             text-decoration: line-through;
         }
+
+        .proBox p:nth-child(5) span:nth-child(2) {
+            color: red;
+        }
+
+        .proBox p:nth-child(5) span:first-child {
+            font-size: 24px;
+            color: green;
+            font-weight: 600;
+        }
+
+        .proBox p:nth-child(4) span img {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="proBox">
-        <!-- <img src="products/1.webp" alt="proImg">
-        <p>Campus</p>
-        <p>Sport Shoes</p>
-        <p>Rating - 4.5/5</p>
-        <p><span>&#8377;999</span> <span>&#8377;1500</span> <span>(50% off)</span></p>
-        <p>size 6,7,8,9</p> -->
+    <div class="container">
     </div>
+
     <script src="Js/product.js"></script>
 </body>
 
