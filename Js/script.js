@@ -18,4 +18,23 @@ $(document).ready(function () {
         $('ul').toggleClass('show');
         $('#icon i').toggleClass('active');
     });
+
+    // strings: ["HK Solution", "Digital World", "Social Media", "Branding", "Graphic Design"],
+
+    // Hero Section
+    let typed = new Typed(".typed_1", {
+        strings: ["Full Stack Developer", "Graphic Designer", "Web Developer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    // Hero Section
+    let typed1 = new Typed(".typed_2", {
+        strings: ["Graphic Designer", "Web Developer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
 });

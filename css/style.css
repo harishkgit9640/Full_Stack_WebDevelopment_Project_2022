@@ -41,6 +41,9 @@ a {
     background-position: center;
 }
 
+
+/* main content */
+
 .max_width,
 ul {
     display: flex;
@@ -126,7 +129,7 @@ ul {
 }
 
 .max_width .content span {
-    color: var(--darkGreen);
+    color: var(--orange);
     font-weight: 800;
 }
 
