@@ -195,18 +195,24 @@ input[type=text] {
     transition: all 0.3s ease;
 }
 
+.other_opt i {
+    line-height: 45px;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
 .other_opt .google {
     margin-right: 10px;
-    border: 2px solid var(--orange);
-    color: var(--orange);
+    border: 2px solid orangered;
+    color: orangered;
     box-shadow: 0 0 6px var(--shadow);
     transition: all 0.3s ease;
 }
 
 .other_opt .google:hover {
-    background-color: var(--orange);
-    border: none;
     color: var(--white);
+    background-color: orangered;
+    border: none;
 }
 
 .other_opt .facebook {
