@@ -6,15 +6,14 @@
 }
 
 :root {
-    /* --darkGreen: #071E22;
-    --orange: #FC440F; */
+    --orange: #FC440F;
     --blueDark: #4158d0;
     --white: #ffffff;
     --lightBlack: #585858;
     --black: #000000;
     --shadow: rgba(0, 0, 0, 0.5);
     --bg-1: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    --bg-2: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    --bg-2: linear-gradient(45deg, #FC440F 0%, #2575fc 100%);
 }
 
 body {
@@ -203,15 +202,15 @@ input[type=text] {
 
 .other_opt .google {
     margin-right: 10px;
-    border: 2px solid orangered;
-    color: orangered;
+    border: 2px solid var(--orange);
+    color: var(--orange);
     box-shadow: 0 0 6px var(--shadow);
     transition: all 0.3s ease;
 }
 
 .other_opt .google:hover {
     color: var(--white);
-    background-color: orangered;
+    background-color: var(--orange);
     border: none;
 }
 
